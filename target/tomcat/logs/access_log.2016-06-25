@@ -62,3 +62,9 @@
 0:0:0:0:0:0:0:1 - - [25/Jun/2016:14:45:53 +0300] "GET /events/views/events.html HTTP/1.1" 304 - http-bio-8080-exec-2 2
 0:0:0:0:0:0:0:1 - - [25/Jun/2016:14:45:53 +0300] "GET /events/views/navbar.html HTTP/1.1" 304 - http-bio-8080-exec-6 2
 0:0:0:0:0:0:0:1 - - [25/Jun/2016:14:45:53 +0300] "GET /events/webapi/files/images/events_cover.jpg HTTP/1.1" 200 108511 http-bio-8080-exec-6 3
+0:0:0:0:0:0:0:1 - - [25/Jun/2016:15:29:09 +0300] "GET /EventsPlatform HTTP/1.1" 404 - http-bio-8080-exec-4 0
+0:0:0:0:0:0:0:1 - - [25/Jun/2016:15:29:17 +0300] "GET /events/webapi/files/images/events_cover.jpg HTTP/1.1" 200 108511 http-bio-8080-exec-4 3
+0:0:0:0:0:0:0:1 - - [25/Jun/2016:15:29:27 +0300] "GET /events/scripts/vendor/angular-route.min.js.map HTTP/1.1" 404 1043 http-bio-8080-exec-4 9
+0:0:0:0:0:0:0:1 - - [25/Jun/2016:15:29:27 +0300] "GET /events/scripts/vendor/angular-resource.min.js.map HTTP/1.1" 404 1049 http-bio-8080-exec-8 3
+0:0:0:0:0:0:0:1 - - [25/Jun/2016:15:29:51 +0300] "POST /events/webapi/users/login HTTP/1.1" 200 377 http-bio-8080-exec-4 532
+0:0:0:0:0:0:0:1 - - [25/Jun/2016:15:29:51 +0300] "GET /events/webapi/files/images/bear.jpg HTTP/1.1" 200 174777 http-bio-8080-exec-4 9
