@@ -1,0 +1,58 @@
+
+<div ng-include="'views/navbar.html'"></div>
+
+<div class="container" id="content-container">
+
+  <h2>Adaugare eveniment</h2>
+    
+    
+    
+    <div class="row">
+        <div class="col-md-2 text-center"><h4>Title</h4></div> 
+        <div class="col-md-10">
+            <input type="text" class="form-control  border_radius_4" placeholder="Username" aria-describedby="basic-addon1">
+        </div>
+         
+    </div>
+    
+    
+    
+    
+    
+<!--date-->
+<div class="row">
+
+    <div class="col-md-6">
+        <p class="input-group">
+            <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="dt_start" is-open="popup1.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" />
+            <span class="input-group-btn">
+            <button type="button" class="btn btn-default" ng-click="open1()"><i class="glyphicon glyphicon-calendar"></i></button>
+          </span>
+        </p>
+    </div>
+
+    <div class="col-md-6">
+        <p class="input-group">
+            <input type="text" class="form-control" uib-datepicker-popup ng-model="dt_end" is-open="popup2.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" />
+            <span class="input-group-btn">
+            <button type="button" class="btn btn-default" ng-click="open2()"><i class="glyphicon glyphicon-calendar"></i></button>
+          </span>
+        </p>
+    </div>
+
+<!--    facebook-->
+    <div>
+    
+        <h2>Facebook post test</h2>
+        
+        <input type="text" class="form-control  border_radius_4" placeholder="Username" aria-describedby="basic-addon1">
+        <button type="button" ng-click="post()" class="btn btn-default">Post</button>
+         <a facebook class="facebookShare"  data-url='{{eventDataLink}}' data-shares='shares' data-callback='callback'>{{ shares }}</a>   
+    </div>
+<!--end facebook-->
+    
+    
+</div>
+<button type="button" ng-click="showDate()" class="btn btn-default">Left</button>
+
+</div>

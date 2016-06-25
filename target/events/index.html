@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html ng-app="eventsApp" lang="en">
+<head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="styles\style.css" media="screen" title="no title" charset="utf-8">
+
+<meta charset="ISO-8859-1">
+<title>Events platform</title>
+</head>
+<body>
+<div ng-view >
+
+
+
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.3.min.js" charset="utf-8"></script>
+<!-- Bootstrap javaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js" charset="utf-8"></script>
+<script src="scripts\app.js" charset="utf-8"></script>
+<!-- controllers -->
+<script src="scripts\controllers\loginController.js" charset="utf-8"></script>
+<script src="scripts\controllers\eventsController.js" charset="utf-8"></script>
+<script src="scripts\controllers\profileController.js" charset="utf-8"></script>
+<script src="scripts\controllers\addEventController.js" charset="utf-8"></script>
+<script src="scripts\controllers\signupController.js" charset="utf-8"></script>
+
+<!-- angular dependencies -->
+<script src="scripts\vendor\angular-route.min.js" charset="utf-8"></script>
+<script src="scripts\vendor\angular-resource.min.js" charset="utf-8"></script>
+
+<!-- services -->
+<script src="scripts\services\userService.js" charset="utf-8"></script>
+<script src="scripts/services/locationService.js" charset="utf-8"></script>
+
+<!-- directives -->
+<script src="scripts\directives\validationDirectieve.js" charset="utf-8"></script>
+    
+<!--Ui bootstrap angular-->
+<script src="scripts/vendor/ui-bootstrap-tpls-1.3.2.min.js" charset="utf-8"></script>
+<script src="https://code.angularjs.org/1.5.5/angular-animate.min.js" charset="utf-8"></script>
+<script src="https://code.angularjs.org/1.5.5/angular-touch.min.js" charset="utf-8"></script>
+    
+<!--Angular Google Map-->
+<!--
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByakozUVI_wqTv8xWw54mQaDTQm8VgV2c&callback=initMap"
+    async defer></script>
+-->
+<script src="https://cdn.jsdelivr.net/lodash/4.13.1/lodash.min.js" charset="utf-8"></script>   
+<script src='//maps.googleapis.com/maps/api/js?key=AIzaSyByakozUVI_wqTv8xWw54mQaDTQm8VgV2c&libraries=places&sensor=false'></script>
+  
+<script src="https://rawgit.com/angular-ui/angular-google-maps/master/dist/angular-google-maps.min.js" charset="utf-8"></script>  
+    
+
+<script src="scripts\vendor\angular-simple-logger.js" charset="utf-8"></script>
+    
+    
+<!--Google places-->
+<script src="scripts/vendor/autocomplete.js" charset="utf-8"></script>
+<link rel="stylesheet" href="styles/autocomplete.css">
+
+    
+<!--angular-socialshare-->
+<link rel='stylesheet' href="scripts/angular-socialshare-master/angular-socialshare.min.css">
+<script src="scripts/angular-socialshare-master/angular-socialshare.min.js"></script>
+    
+</body>
+</html>

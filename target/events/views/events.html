@@ -1,0 +1,28 @@
+<div ng-include="'views/navbar.html'">
+</div>
+
+<div  class="container-fluid events-search-container ">
+    <div class="row text-center">
+        <h2>Events at you finger</h2>
+        <div class="col-sx-0 col-sm-1 col-md-2 col-lg-2 "></div>
+        <div class="input-group input-group-lg col-sx-12 col-sm-10 col-md-8 col-lg-8 ">
+        <input ng-model="eventFilter" type="text" class="form-control" id="search-input-events" placeholder="Events related keywords..." aria-describedby="sizing-addon1" novalidate>
+        <span class="input-group-addon" id="sizing-addon1">Search</span>
+        </div>
+        <div class="col-sx-0 col-sm-1 col-md-2 col-lg-2 "></div>
+    
+    </div>
+</div>
+
+
+<div class="container silver">
+    <p>
+        Events {{test}}
+    </p>
+    <ul>
+        <li ng-repeat="event in events | filter:eventFilter">{{event.title+" "+event.description}}</li>
+    </ul>
+
+</div>
+
+<!--style="background-image:url('events/webapi/images/events_cover.jpg');width:100%; height:500px"-->

@@ -1,0 +1,35 @@
+<div ng-include="'views/navbar.html'">
+</div>
+
+<div class="container" id="content-container">
+
+    <div class="row centered-form">
+        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center">Log in</h3>
+                </div>
+                <div class="panel-body">
+                    <form name="loginForm" novalidate ng-submit="login()">
+                        <label for="inputEmail" class="sr-only">Email address</label>
+                        <input ng-model="form.email" type="email" id="inputEmail" class="form-control" placeholder="Email address" emailvalidation>
+                        <br>
+                        <label for="inputPassword" class="sr-only">Password</label>
+                        <input ng-model="form.password" type="password" id="inputPassword" class="form-control" placeholder="Password" passvalidation>
+                        <br>
+                        <button ng-disabled="loginForm.$invalid" class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
+                        <br>
+
+                    </form>
+                    <div ng-show="alertState==1" class="alert alert-success" role="alert">Success!</div>
+                    <div ng-show="alertState==0" class="alert alert-warning" role="alert">
+                        The email address or password you entered is not valid!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+</div>

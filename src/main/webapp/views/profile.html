@@ -1,0 +1,129 @@
+
+<div ng-include="'views/navbar.html'"></div>
+
+<div class="container " id="content-container">
+
+<div class="row text-center">
+    <img class="img-circle img-thumbnail" id="avatar-profile" ng-src="{{userInfo.value.avatarURL}}" alt="Unavaillable">
+    <h2 class="bold">{{userInfo.value.firstName+" "+userInfo.value.lastName}}</h2>
+    <hr class="shadow-line">
+</div>
+
+ 
+<br>   
+<br> 
+<div class="row">
+    <div class="col-sm-0 col-md-1 "></div>
+    <div class="col-sm-12 col-md-4">
+        <h2>Info</h2>
+        <table class="table" ng-hide="infoState">
+            <tr>
+                <td>
+                    Email:
+                </td>
+                <td>
+                    {{userInfo.value.email}}
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Phone:
+                </td>
+                <td>
+                    {{userInfo.value.phoneNumber}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    City:
+                </td>
+                <td>
+                    {{userInfo.value.location.city}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Country:
+                </td>
+                <td>
+                    {{userInfo.value.location.country}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Address:
+                </td>
+                <td>
+                    {{userInfo.value.location.address}}
+                </td>
+            </tr>
+        </table>
+        
+        <table class="table" ng-show="infoState">
+            <tr>
+                <td>
+                    Email:
+                </td>
+                <td>
+                    <input type="tel" ng-model="userInfo.value.phoneNumber" novalidate>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Location:
+                </td>
+                <td>
+                   <div ng-show="infoState">
+            <input type="text" class="form-control" g-places-autocomplete ng-model="myScopeVar" novalidate />
+                   </div>
+                </td>
+            </tr>
+            
+        </table>
+    
+        <button ng-click="logout()" class="btn btn-primary ">Log out</button>
+        <button ng-click="editUser()"   class="btn btn-primary ">Edit</button>
+        <button ng-click="saveUserInfo()"  ng-show="infoState"  class="btn btn-primary ">Save</button>
+    </div>
+    <div class="col-sm-0 col-md-1 "></div>
+    
+
+    <div  class="col-sm-12 col-md-6 img-thumbnail">
+      <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
+    </div>
+    
+
+</div>
+    
+    <div class="row text-center header-profile">
+    
+        <h3> My events</h3>
+        
+    </div>
+
+    <ul class="list-group">
+   
+        <li class="list-group-item" ng-repeat="event in userPublishedEvents">
+            <h4>{{event.title}}</h4>
+            <p>{{event.description}}</p>
+            <p>Deadline {{event.deadline | date}}</p>
+
+        </li>
+    
+    </ul>
+    
+
+    
+        <p>{{userInfo.value.email}}</p>
+        <p>{{userInfo.value.phoneNumber}}</p>
+        <p>{{userInfo.value}}</p> 
+
+
+</div>
+
+    
+
+    
+

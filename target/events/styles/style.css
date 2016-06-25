@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+nav button{
+    margin-left: 10px;
+}
+
+#content-container{
+    margin-top: 60px;
+    /*background-color: darkgray;*/
+}
+
+.silver{
+    background-color:silver;
+}
+
+.blue{
+    background-color:blue;
+}
+
+.red{
+    background-color: red;
+}
+
+
+.login{
+    width: 300px;
+    margin: 50px auto;
+
+}
+
+ input.ng-dirty.ng-valid {
+     background-color: lightgreen;
+ }
+
+ input.ng-dirty.ng-invalid {
+     background-color: tomato;
+ }
+
+input.ng-dirty{
+    background-color: gray;
+}
+
+#avatar-profile{
+    height: 200px;
+    width: 200px;
+    
+    
+}
+
+.header-profile{
+   
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.angular-google-map-container {
+    height: 300px;
+    
+}
+
+.centered-form{
+	margin-top: 60px;
+}
+
+.centered-form .panel{
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: rgba(0, 0, 0, 0.3) 10px 10px 10px;
+}
+
+.shadow-line{
+    background: rgba(255, 255, 255, 0.8);
+	box-shadow: rgba(0, 0, 0, 0.3) 10px 10px 10px;
+}
+
+.events-search-container{
+    background-image: url('../../events/webapi/files/images/events_cover.jpg');
+    margin-top: 50px;
+    height: 400px;
+    color: white;
+   padding-top:100px;
+   
+}
+
+#search-input-events:valid {
+  background-color: white;
+ }
+
+/*ui angular bootstrap*/
+.nav, .pagination, .carousel, .panel-title a {
+    cursor: pointer; 
+}
+/*end*/
+
+
+.border_radius_4{
+    border-radius: 4px !important;
+}
